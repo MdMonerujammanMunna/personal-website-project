@@ -9,16 +9,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!--Roboto font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Bebas Neue font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--  -->
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>personal-website</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            font-family: "Roboto", sans-serif;
+        }
 
+        :root {
+            --mainOne-color: #363958;
+            --mainTwo-color: #FF8367;
+            --text-color: #3E3E3E;
+        }
+
+        .bebasNeue {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="container mx-auto">
+    <header class="px-[100px]">
+        <nav class="mt-10 font-semibold">
+            <ul class="flex gap-10 justify-end">
+                <li><a href="">About</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">Protfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <section class=" md:flex flex-row-reverse items-center justify-between mt-20">
+            <div class="flex-1 mb-10 md:mb-0">
+                <img src="./images/do not use this pic.png" alt="">
+            </div>
+            <div class="flex-1">
+                <h1 class="text-7xl font-bold bebasNeue text-[var(--mainTwo-color)] mb-4"><span
+                        class="bebasNeue text-[var(--mainOne-color)]">Hello,
+                        I'm</span> <br> Rob Davidson
+                </h1>
+                <p class="max-w-[330px] mb-9 text-[var(--text-color)]">A full stack allaround designer that placerat in
+                    massa consectetur</p>
+                <button
+                    class="btn px-[56px] py-[18px] font-medium text-white bg-linear-to-b from-[#F46060] to-[#FF8063]">Hire
+                    me</button>
+            </div>
 
+        </section>
+    </header>
 </body>
 
 </html>
